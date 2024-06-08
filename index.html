@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <nav class="navbar">
+            <h2 class="navheader">Job Mania</h2>
+            <div class="menubar">
+                <a href="index.html" class="text">Home</a>
+                <a href="#browsejobs"  class="text">Browse Jobs</a>
+                <a href="#companies"  class="text">Companies</a>
+                <a href="#blog"  class="text">Blog</a>
+                <a href="#"  class="text">Sign In/ Login</a>
+            </div>
+            <div class="togglemenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <header>
+        <h1 class="headtitle">Find your <br><span>Dream Job</span></h1>
+    </header>
+    <main>
+    <div class="searchwrapper" id="browsejobs">
+        <div class="searchbox">
+            <div class="searchcard">
+                <input class="searchinput" type="text" placeholder="Search for a Job">
+                <button class="searchbutton">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class=filterbox>
+        <div class="filterdropdown">
+        <select class="filterselect" id="joblevel" name="joblevel">
+         <option>Job Level</option>
+            <option>Entry Level</option>
+            <option>Medium</option>
+            <option>Senior</option>
+        </select>
+        <select class="filterselect" id="jobtype" name="jobtype">
+          <Option>Job Type</Option>
+            <option>IT</option>
+            <option>Management</option>
+            <option>Education</option>
+        </select>
+        <select class="filterselect" id="employment" name="employment">
+            <option>Employment Type</option>
+            <option>Intership</option>
+            <option>Part Time</option>
+            <option>Full Time</option>
+
+        </select>
+        <select class="filterselect" id="location" name="location">
+            <option>Location</option>
+            <option>Remote</option>
+            <option>US</option>
+            <option>UK</option>
+        </select>
+        <select class="filterselect" id="education" name="education">
+            <option>Education</option>
+            <option>High School</option>
+            <option>Bachelor's Degree</option>
+            <option>Master's Degree</option>
+        </select>
+    </div>
+</div>
+
+,<section class="joblist" id="jobs">
+    <div class="jobcard">
+        <div class="jobname">
+            <img class="jobprofile" src="images/softwareeng.jpg" alt="softwareengineer">
+            <div class="jobdetail">
+            <h3>Software engineer, Tesla</h3>
+            <p> A software engineer designs, builds, and maintains software applications using computer science principles and programming skills. They create solutions for real-world problems, from developing games to designing network control systems. It’s a dynamic and rewarding career</p>
+        </div>
+        </div>
+        <div class="joblabel">
+            <a class="labela" href="#">HTML</a>
+            <a class="labelb" href="#">css</a>
+            <a class="labelc" href="#">JavaScript</a>
+        </div>
+    </div>
+
+    <div class="jobcard">
+        <div class="jobname">
+            <img class="jobprofile" src="images/mechanicaleng.jpg" alt="softwareengineer">
+            <div class="jobdetail">
+            <h3>Mechanical engineer,E-bay</h3>
+            <p>  A mechanical engineer applies principles of physics, mathematics, and material science to design, analyze, and manufacture mechanical systems and devices. </p>
+        </div>
+        </div>
+        <div class="joblabel">
+            <a class="labela" href="html">Model Design</a>
+            <a class="labelb" href="css">Machine Testing</a>
+            <a class="labelc" href="javaScript">Machine Repair</a>
+        </div>
+    </div>
+
+
+    <div class="jobcard">
+        <div class="jobname">
+            <img class="jobprofile" src="images/webdeveloper.jpg" alt="softwareengineer">
+            <div class="jobdetail">
+            <h3>Web Developer, Amazon</h3>
+            <p>  A web developer is a programmer who creates websites using a client–server model </p>
+        </div>
+        </div>
+        <div class="joblabel">
+            <a class="labela" href="#">HTML</a>
+            <a class="labelb" href="#">CSS</a>
+            <a class="labelc" href="#">REACT</a>
+        </div>
+    </div>
+
+
+    <div class="jobcard">
+        <div class="jobname">
+            <img class="jobprofile" src="images/sales.jpg" alt="softwareengineer">
+            <div class="jobdetail">
+            <h3>Sales Associate, Walmart</h3>
+            <p>  Walmart is a retail giant known for its commitment to helping customers save money and live better. You can shop online for a wide range of products, including food, beauty items, and more. </p>
+        </div>
+        </div>
+        <div class="joblabel">
+            <a class="labela" href="#">Sales Knowledge</a>
+            <a class="labelb" href="#">Team leader</a>
+            <a class="labelc" href="#">POS knowledge</a>
+        </div>
+    </div>
+    <button class="morejobs">More JOBS</button>
+</section>
+<section class="join">
+    <div class="joindetail">
+        <h1 class="sectiontitle">Begin your new job with us</h1>
+        <p>We are best job board. Around 50% applicants get call for interview with us.</p>
+    </div>
+    <button class="join-button"> Join US</button>
+</section>
+<section class="featured" id="companies">
+    <h1 class="sectiontitle">Featured companies</h1>
+    <p>These are best companies with very high hiring rate.</p>
+    <div class="featuredwrapper">
+        <div class="featuredcard">
+            <img class="featuredimg" src="images/google.png" alt="google">
+            <p>Google</p>
+            <button class="featuredbutton">View 1 Job</button>
+        
+    </div>
+   
+        <div class="featuredcard">
+            <img class="featuredimg" src="images/amazon.jpeg" alt="google">
+            <p>Amazon</p>
+            <button class="featuredbutton">View 9 Job</button>
+        
+    </div>
+  
+        <div class="featuredcard">
+            <img class="featuredimg" src="images/tesla.png" alt="google">
+            <p>Tesla</p>
+            <button class="featuredbutton">View 3 Job</button>
+        </div>
+    </div>
+</section>
+<section class="blog" id="blog">
+    <h1 class="sectiontitle">Career advices</h1>
+<p>Learn more about career tips from company's recruiter</p>
+<div class="blogwrapper">
+    <div class="blogcard">
+        <img src="images/blog1.jpg" alt="blog" class="blogimage">
+        <div class="blogdetail">
+            <span>11 Apr 2024</span>
+            <h4>How to enjoy your work</h4>
+            <p>Be collaborative , grow together, work together</p>
+            <hr class="divider">
+            <a href="#" class="blogmore">Read</a>
+        </div>
+    </div>
+        <div class="blogcard">
+            <img src="images/blog2.jpeg" alt="blogs" class="blogimage">
+            <div class="blogdetail">
+                <span>24 Apr 2024</span>
+                <h4>10 tips to become successful</h4>
+                <p>These are from experts. Be follow to boost your journey</p>
+                <hr class="divider">
+                <a href="#" class="blogmore">Read</a>
+            </div>
+        </div>
+            <div class="blogcard">
+                <img src="images/bllog3.jpeg" alt="blogs" class="blogimage">
+                <div class="blogdetail">
+                    <span>24 May 2024</span>
+                    <h4>Time Management</h4>
+                    <p>Time Mangement is crucial.</p>
+                    <hr class="divider">
+                    <a href="#" class="blogmore">Read</a>
+                </div>
+    </div>
+</div>
+</section>
+    </main>
+    <footer>
+        <div class="footerwrapper">
+            <h3>Job board</h3>
+            <p>This job board website is created professionally. This is one of the best websites to find a job. Images used in this websites are subjected to copyright</p>
+            <div class="socialmedia">
+            <a href="#" title="tag"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" title="tag"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#" title="tah"><i class="fa-brands fa-instagram"></i></i></a>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/363a870830.js" crossorigin="anonymous"></script>
+</body>
+</html>
